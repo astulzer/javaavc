@@ -22,7 +22,32 @@ public class Conta {
 		return false;
 	}
 	
-	void depositar(double valor) {
+	public void depositar(double valor) {
 		this.saldo += valor;
+	}
+
+	public void setNome(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public char[] getNome() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public char[] getSaldo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void setLimite(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public char[] getLimite() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

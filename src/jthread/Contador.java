@@ -6,7 +6,7 @@ public class Contador implements Runnable {
 	public void setCont(int cont) {
 		this.cont = cont;
 	}
-	public void run() {
+	public synchronized void run() {
 		for (int i = 0; i < 100; i++) {
 			System.out.println("Thread"+cont+", valor: "+ i);
 		}

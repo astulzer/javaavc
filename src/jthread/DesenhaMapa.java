@@ -1,6 +1,6 @@
 package jthread;
 
-public class DesenhaMapa {
+public class DesenhaMapa implements Runnable{
 	//public void desenha(){
 //	codigo que sabe desenhar mapa }
 	public void run() {

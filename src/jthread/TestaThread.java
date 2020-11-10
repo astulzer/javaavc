@@ -8,6 +8,8 @@ public class TestaThread {
 		tMapa.start(); // dispara a thread na minha jvm
 
 		BarraDeProgresso bProg = new BarraDeProgresso();
+		Thread tBProg = new Thread(bProg);
+		tBProg.start(); 
 		
 	}
 
