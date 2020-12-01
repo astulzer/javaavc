@@ -1,0 +1,57 @@
+CREATE TABLE contatos (
+	id BIGINT NOT NULL AUTO_INCREMENT,
+	nome VARCHAR(255),
+	email VARCHAR(255),
+	endereco VARCHAR(255),
+	PRIMARY KEY(id)
+);
+\connect --mysql root@localhost:3306
+\sql
+show databases;
+use test;
+show tables;
+desc contatos;
+describe contatos;
+
+JavaBeans vs EJB (Enterprise JavaBeans)
+JavaBeans: POJO
+POJO: Plain Old Java Object
+
+EJB vc Spring
+EJB e Spring: Java Programação Enterprise
+Java EE
+
+Este curso, antes de Java Web (próximo período), é de Java Standard
+Java Web é um subconjunto de Java Enterprise (Java EE)
+
+As tabelas do banco, na camada de programação viram classes 
+JavaBeans...
+
+As colunas ou campos do banco, na camada de programação viram 
+os atributos da classe, com as respectivas equivalências de tipos
+
+cntrl 3 + ggas
+
+
+Nossa programação a partir de agora está em 3 camadas...
+A 1a camada, de baixo, é a camada do banco
+A camada do meio, é camada que faz a transição entre a aplicação e
+ o banco...
+Portanto a 2a camada é meu JavaBeans.
+Vamos agora programar a 3a camada, que é minha aplicação,
+ uma classe que vai ter o método main...
+ Vamos agora a mais um refinamento, separando a camada de aplicação
+  da regra de negócio...
+  Num padrão MVC, seria separar o V (view, camada de aplicação)
+   do C (controller, regra de negócio)
+ 
+ E o padrão que vamos utilizar para separar aplicação (view) da
+  regra de negócio é o famoso DAO...
+  
+  PROVA:
+Clayton Chagas20:13
+1. Inserir com classe Scanner
+2. Método alterar no ContatoDao
+3. Método remover no Contato Dao
+Clayton Chagas20:14
+4. Criar classes para testar o que foi implementado
