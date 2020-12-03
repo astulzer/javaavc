@@ -1,6 +1,7 @@
 package javadb;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 
 public class TesteConnectionFactory {
 
@@ -9,7 +10,9 @@ public class TesteConnectionFactory {
 			Connection con = ConnectionFactory.getConnection();
 			System.out.println("Conectado ao Banco de dados MYSQL Local.");
 			con.close();
-		}	catch(SQL)
+		}	catch(SQLException e) {
+			e.printStackTrace();
+		}
 
 	}
 
